@@ -1,0 +1,187 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#021317, #293841, #80afa3, #ded8c9);
+    position: relative;
+}
+
+.moon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset 8px -8px rgba(255, 255, 255, 0.9);
+    top: 5%;
+    left: 10%;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 24px;
+    font-family: STKaiti;
+    font-weight: 500;
+    letter-spacing: 9px;
+    text-shadow: 1px 3px 3px rgba(255, 255, 255, 0.8);
+    top: 2%;
+    right: 16%;
+    position: absolute;
+}
+
+h2 span {
+    font-size: 14px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+
+.mountain {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-right: 250px solid transparent;
+    border-left: 250px solid transparent;
+    border-bottom: 150px solid #f4f4f4;
+    bottom: 50px;
+    left: -40%;
+    z-index: 1;
+}
+
+.mountain.two {
+    border-bottom: 150px solid #f4f4f4;
+    bottom: 30px;
+    left: -10%;
+}
+
+.land {
+    width: 200%;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    background: #fcfcfc;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+    left: -50%;
+    bottom: -100px;
+    z-index: 2;
+}
+
+.snowman {
+    width: 120px;
+    height: 160px;
+    position: absolute;
+    z-index: 10;
+    right: 2%;
+    bottom: 4%;
+}
+
+.snowman .snowman-head {
+    width: 57px;
+    height: 57px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    box-shadow: inset -10px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.eye {
+    width: 6px;
+    height: 6px;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+
+.eye.right {
+    left: unset;
+    right: 20px;
+    top: 14px;
+}
+
+.nose {
+    width: 4px;
+    height: 13px;
+    background: orangered;
+    position: absolute;
+    left: 24%;
+    top: 36%;
+    transform: rotate(266deg);
+    border-radius: 50% 50% 40% 40%/100% 100% 10% 10%;
+}
+
+.mouth {
+    width: 8px;
+    height: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: 56%;
+    left: 30%;
+    position: absolute;
+    transform: rotate(353deg);
+    clip-path: polygon(0% 55%, 100% 55%, 100% 100%, 0% 100%);
+}
+
+.snowman-scarf {
+    width: 57px;
+    height: 12px;
+    position: absolute;
+    z-index: 2;
+    background: #f13838;
+    top: 44px;
+    left: 32px;
+    transform: rotate(-5deg);
+    border-radius: 20%;
+}
+
+.snowman-body::after {
+    content: '';
+    width: 10px;
+    height: 29px;
+    position: absolute;
+    top: -3px;
+    left: 49px;
+    background: #f13839;
+    border-radius: 20%;
+    transform: rotate(354deg);
+
+}
+
+.snowman-body {
+    width: 90px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    transform: translateX(-50%);
+    box-shadow: inset -10px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hand {
+    width: 4px;
+    height: 34px;
+    background: rgba(235, 165, 108, 0.8);
+    top: 3%;
+    left: -1%;
+    border-radius: 50% 50% 31% 66%/36% 65% 38% 65%;
+    position: absolute;
+    transform: rotate(315deg);
+}
+
+.hand.right {
+    top: -3%;
+    left: 90%;
+    transform: rotate(37deg);
+}
